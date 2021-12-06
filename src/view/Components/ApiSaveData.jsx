@@ -3,14 +3,14 @@ import axios from 'axios';
 
 function ApiSaveData(props) {
 
-    const [posts, setPosts]= useState([]);
+    const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         axios
         .get('https://jsonplaceholder.typicode.com/posts')
         .then(res => {
-            console.log(res)
-            setPosts(res.data)
+            console.log(res);
+            setPosts(res.data);
         })
         .catch (err => {
             console.log(err);

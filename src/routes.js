@@ -1,11 +1,11 @@
 import { lazy } from "react";
 
-const Nav   = lazy(() => import('./view/Components/Header'));
-const Cards = lazy(() => import('./view/Components/ApiSaveData'));
+const Header    = lazy(() => import('./view/Components/Header'));
+const Card      = lazy(() => import('./view/Components/GoogleTranslator'));
 
 const routes = [
-    { payh: '/', exact:true, name: "Nav", component: Nav},
-    { path: '/', exact: true, name: "Cards", component: Cards }
+    { payh: '/', exact:true, name: "Header", component: Header},
+    { path: '/', exact: true, name: "Card", component: Card }
 ];
 
 export default routes;
