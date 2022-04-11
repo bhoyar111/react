@@ -3,7 +3,7 @@ import React from 'react';
 function GoogleTranslator(props) {
     return (
         <div>
-            <h1>Hello Akash</h1>
+            <h1>Hello Akash Bhoyar</h1>
 
             <p>Greetings of the day</p>
 

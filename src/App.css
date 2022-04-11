@@ -31,10 +31,23 @@
     text-align: center;
     margin-bottom: 50;
   }
+
+  .navbar{
+      padding: 10px;
+  }
   
   .App-logo {
     height: 40vmin;
     pointer-events: none;
+  }
+
+  .container-fluid-headnav {
+    width: 100%;
+    background-color: grey;
+  }
+
+  .container-demo{
+    /* text-align: center; */
   }
   
   @media (prefers-reduced-motion: no-preference) {
