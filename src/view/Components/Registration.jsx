@@ -73,19 +73,33 @@ function Registration() {
                 </form>
                 <button onClick={handleSubmit}>Submit</button>
             </div>
+            <div className='container-fluit m-5 bm-10'>
             <div>
-                {
-                    records.map((curna) => {
-                        return(
-                            <div key={curna.id}>
-                                <p>{curna.full_name}</p>
-                                <p>{curna.address}</p>
-                                <p>{curna.email_id}</p>
-                                <p>{curna.mobile_no}</p>
-                            </div>
-                        )
-                    })
-                }
+                <table className="table">
+                    <thead className="thead-dark">
+                        <tr>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">mobile No.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { records.map((curna) => {
+                                return(
+                                    <tr key={curna.id}>
+                                        <td>{curna.full_name}</td>
+                                        <td>{curna.address}</td>
+                                        <td>{curna.email_id}</td>
+                                        <td>{curna.mobile_no}</td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+            </div>
+
             </div>
         </> 
     )
